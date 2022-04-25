@@ -35,6 +35,22 @@
                 </li>
             </ul>
         </nav>
+        
+        <div class="mobile-menu">
+            <button  class="mobile-menu__box is-active" type="button" data-menu-button arial-expendet="false">
+            <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель меню">
+                <use class="mobile-menu__close" href="./images/icon/symbol-defs.svg#close-phone"></use>
+                <use class="mobile-menu__open"  href="./images/icon/symbol-defs.svg#open-phone"></use>
+            </svg>
+        </button>
+        </div>
+            <div class="mobile-container" data-menu>
+                
+            </div>
+    
+
+
+
             <ul class="contact list">
                 <li class="contact__item">
                     <a class="contact__link" href="mailto:info@devstudio.com">
@@ -451,8 +467,8 @@
                         <button class="hero-button-ft" type="submit">Подписаться
                             <svg class="hero-button-ft__icon">
                                 <use href="./images/icon/symbol-defs.svg#icon-send" width="24" height="24"></use>
+                            </svg>
                         </button>
-                        </svg>
                     </form>
                 </div>
 
@@ -543,22 +559,8 @@
 </div>
   
 <!-- JavaScript -->
- <script src="./js/modal.js">
-        (() => {
-      const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
-      };
-    
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-    
-      function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-      }
-    })();
-</script>
+ <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 
 
 </body>

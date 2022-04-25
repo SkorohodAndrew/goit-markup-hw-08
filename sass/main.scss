@@ -1,7 +1,12 @@
-@import"./utils/variables";
+@import"./utils/fonts";
 @import"./base/normalize";
+@import"./utils/variables";
+
+
 @import"./components/modal";
-@import"./components/header";
+
+
+@import"./components/headernew";
 @import"./components/hero";
 @import"./components/benefits";
 @import"./components/services";
@@ -9,14 +14,10 @@
 @import"./components/client";
 @import"./components/footer";
 @import"./components/button";
-@import"./components/cards"
+@import"./components/cards";
 
 
 
 
 
 
-// @import"./components/header";
-// @import"./components/footer";
-// @import"./components/button";
-// @import"./components/cards";
