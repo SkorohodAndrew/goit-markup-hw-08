@@ -956,7 +956,7 @@ textarea {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
