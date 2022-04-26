@@ -1,7 +1,6 @@
 /* Шрифт */
 $main-font: "Roboto", sans-serif;
-$secondary-font: "Raleway",
-sans-serif;
+$secondary-font: "Raleway",sans-serif;
 /* Цвет текста  */
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
@@ -66,17 +65,19 @@ p {
 }
 
 .container {
-    width: 480px;
-    height: 60px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 
-    @media screen and (min-width: 480px) {
-        .container {
-            width: 480px;
-        }
+    @media screen and (min-width: 768px) {
+        max-width: 768px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
     }
 }
 

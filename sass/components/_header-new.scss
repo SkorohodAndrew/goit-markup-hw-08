@@ -3,15 +3,22 @@
     color: $primary-text-color;
     border: 1px solid #ececec;
 
+    &__container {
+        
+        justify-content: space-between;
+        align-items: center;
+    }
 
+
+    
+    @media screen and (max-width: 768px) {
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
 }
 
-.header__container{
-    position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
 
 .logo {
     font-family: $secondary-font;
@@ -22,6 +29,7 @@ align-items: center;
     color: $accent-color;
     text-decoration: none;
 }
+
 .logo__studio {
     font-family: $secondary-font;
     font-weight: 700;
@@ -30,10 +38,20 @@ align-items: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
-.site-nav {
 
-display: none;
-    // display: flex;
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }
 
     list-style: none;
     padding: 0;
@@ -43,11 +61,9 @@ display: none;
     letter-spacing: 0.02em;
     margin-left: 93px;
     font-style: 400;
-    
 }
 
 .site-nav__link {
-    display: none;
     position: relative;
     display: block;
     padding-top: 32px;
@@ -75,17 +91,55 @@ display: none;
 
 }
 
+
+.site-nav__item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+}
+
+
+
+
+
+
+/* icon */
 .contact {
-    display: none;
+    
+    display: flex;
+    flex-direction:column ;
+    margin-left: auto;
     letter-spacing: 0.02em;
     font-weight: 500;
-    // display: flex;
-    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction:row;
+    }
+    
+}
+
+
+.contact__icon {
+    align-items: center;
+    margin-right: 10px;
+    fill: currentColor;
+
 }
 
 .contact__link {
-    display: none;
-    // display: flex;
+    display: flex;
     align-items: center;
 
     text-decoration: none;
@@ -99,14 +153,30 @@ display: none;
 }
 
 
+.contact__item {
+    margin-bottom: 10px;
 
-.navigation{
-display:flex ;
-justify-content: space-between;
-align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
 }
 
-.mobile-menu__box {
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* modile-window */
+
+.mobile-header__button {
 
     width: 40px;
     height: 40px;
@@ -121,33 +191,17 @@ align-items: center;
 
 }
 
-.mobile-menu__close {
+.mobile-header__close {
     display: none;
 
-    .mobile-menu__box.is-active & {
+    .mobile-header__button.is-active & {
         display: block;
     }
 }
-.mobile-menu__open {
-    .mobile-menu__box.is-active & {
+
+.mobile-header__open {
+    .mobile-header__close.is-active & {
         display: none;
     }
 }
-
-.mobile-container{
-    display: none;
-    position: absolute;
-    top:100%;
-    left: 0;
-    width: 100%;
-    height: 796px;
-    margin: 0;
-    background-color: teal;
-    
-    &.is-active{
-        display: block;
-    }
-    
-}
-
 
