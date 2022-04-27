@@ -4,21 +4,56 @@
 }
 
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // text-align: center;
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        // margin: -15px;
+        
+    }
+    
 }
 
 .card-set__item {
-    margin-right: 30px;
+
+    // margin-right: 30px;
+    // margin-bottom: 30px;
     background-color: $primary-header-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
-        &:last-child{
-            margin-right: 0;
-        }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+
+    // @media screen and (min-width:768px) {
+    //     width: calc((100% - 4 * 15px) / 2);
+    //     margin: 15px;
+    // }
+
+    // @media screen and (min-width:1200px) {
+    //     width: calc((100% - 8 * 15px) / 4);
+    //     margin: 15px;
+    // }
+}
+
+.person__foto{
+    width: 460px;
+    height: 450px;
+
+    @media screen and (min-width:768px){
+        width: 354px;
+        height: 374px;
+    }
+    @media screen and (min-width:1200px) { 
+        width: 270px;   
+        height: 260px;
+    }
 }
 
 
@@ -29,6 +64,7 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .person__title {
@@ -38,6 +74,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+    text-align: center;
 }
 
 .person__text {

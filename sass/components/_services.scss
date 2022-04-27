@@ -1,7 +1,15 @@
 /* Что мы делаем */
 
 .section__work {
+    
     padding: 0 0 94px 0;
+
+    @media screen and (max-width:1199px) {
+        display: none;
+        
+    }
+
+
 }
 .work{
     display: flex;
