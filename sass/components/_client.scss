@@ -1,27 +1,27 @@
 
 .clientage {
     display: flex;
+gap: 30px;
     flex-wrap: wrap;
     // margin: -15px;
 }
 
 .clientage__item {
     // margin-right: 30px;
-
-    @media screen and (min-width:480px) {
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-    }
+    
+        // width: calc((100% - 4 * 15px) / 2);
+        // margin: 15px;
+    
 }
 
 .clientage__link {
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    width: 210px;
     height: 92px;
-    width: 170px;
+    
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
@@ -34,5 +34,15 @@
             border: 1px solid $accent-color;
             fill: $accent-color;
             } 
+
+            @media screen and (min-width:786px){
+                width: 226px;
+                height: 92px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 170px;
+                
+            }
 
 }
