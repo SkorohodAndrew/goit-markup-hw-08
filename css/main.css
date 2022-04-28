@@ -1925,6 +1925,10 @@ textarea {
   margin-right: 10px;
 }
 
+.footer-media__catalog:last-child {
+  margin-right: 0;
+}
+
 .footer-media__item {
   display: -webkit-box;
   display: -ms-flexbox;
