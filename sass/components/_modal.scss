@@ -2,6 +2,7 @@
 
 .backdrop {
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
 
@@ -22,6 +23,7 @@
 
 .modal {
     position: absolute;
+    
     padding: 40px;
     top: 50%;
     left: 50%;
@@ -36,11 +38,14 @@
     transition: transform 250ms $timing-function;
     border-radius: 4px;
 
+
+
     @media screen and (max-width:479px) {
     width: 300px;
+    height: 580px;
     
+    }
 
-}
     @media screen and (min-width:1200px) {
         width: 528px;
         height: 581px;
@@ -83,10 +88,11 @@
     color: $primary-text-color;
     text-align: center;
 
-    // @media screen and (min-width:768px) {
-    //     text-align: center;
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.15;
         
-    // }
+    }
 }
 
 
@@ -186,6 +192,11 @@ textarea {
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
         }
+
+        @media screen and (min-width:768px) {
+        height: 80px;
+        
+        }
 }
 
 
@@ -230,8 +241,14 @@ textarea {
     letter-spacing: 0.03em;
     color: $secondary-text-color;
 
-    @media screen and (min-width:1200px){
 
+    @media screen and (max-width:479px) {
+        font-size: 10px;
+        line-height: 12px;
+    
+    }
+
+    @media screen and (min-width:1200px){
         font-size: 14px;
     }
 }
@@ -246,6 +263,12 @@ textarea {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $accent-color;
+
+    @media screen and (max-width:479px) {
+        font-size: 10px;
+        line-height: 12px;
+    
+    }
 
     @media screen and (min-width:1200px) {
     
@@ -270,6 +293,14 @@ textarea {
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
-    border-radius: 4px
+    border-radius: 4px;
+
+
+    @media screen and (max-width:479px) {
+        font-size: 14px;
+        line-height: 1.87;
+        padding: 6px 35px 6px 35px;
+    }
+
 }
 

@@ -1,7 +1,7 @@
 
 .clientage {
     display: flex;
-gap: 30px;
+    gap: 30px;
     flex-wrap: wrap;
     // margin: -15px;
 }
@@ -11,7 +11,11 @@ gap: 30px;
     
         // width: calc((100% - 4 * 15px) / 2);
         // margin: 15px;
-    
+    @media screen and (max-width:479px) {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .clientage__link {
@@ -21,7 +25,7 @@ gap: 30px;
 
     width: 210px;
     height: 92px;
-    
+
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
@@ -29,20 +33,27 @@ gap: 30px;
     transition: fill 250ms $timing-function,
         border 250ms $timing-function;
 
-        &:hover,
-        &:focus{
-            border: 1px solid $accent-color;
-            fill: $accent-color;
-            } 
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+    }
 
-            @media screen and (min-width:786px){
-                width: 226px;
-                height: 92px;
-            }
+    @media screen and (max-width:479px) {
+        width: 140px;
+        height: 92px;
+        
+    }
 
-            @media screen and (min-width:1200px) {
-                width: 170px;
-                
-            }
+
+    @media screen and (min-width:786px) {
+        width: 226px;
+        height: 92px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+
+    }
 
 }
