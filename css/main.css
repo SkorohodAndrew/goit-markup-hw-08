@@ -684,6 +684,7 @@ img {
 .backdrop {
   position: fixed;
   overflow-y: scroll;
+  z-index: 100;
   top: 0;
   left: 0;
   z-index: 100;
@@ -1298,6 +1299,7 @@ textarea {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 98;
   padding: 48px 40px 48px 40px;
   background-color: #ffffff;
   -webkit-transform: translateX(100%);
@@ -1345,18 +1347,25 @@ textarea {
   letter-spacing: 0.02em;
 }
 
-.mobile-contact__number {
+.mobile-contact__email {
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  color: #757575;
+}
+
+.mobile-contact .mobile-contact__number {
   font-size: 34px;
   line-height: 1.17;
   text-decoration: none;
   color: #2196f3;
 }
 
-.mobile-contact__email {
-  font-size: 24px;
-  line-height: 1.16;
-  text-decoration: none;
-  color: #757575;
+@media screen and (max-width: 479px) {
+  .mobile-contact .mobile-contact__number {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .mobile-contact__item {
@@ -1373,13 +1382,29 @@ textarea {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-network {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .mobile-network__item {
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-network__item {
+    margin-bottom: 10px;
+  }
 }
 
 .mobile-network__link {
   color: #2196f3;
   text-decoration: none;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 /* Hero */
@@ -1662,7 +1687,7 @@ textarea {
 
 @media screen and (max-width: 479px) {
   .card-set__item {
-    width: 270px;
+    width: 310px;
     height: 427px;
     margin-left: auto;
     margin-right: auto;
@@ -1683,7 +1708,7 @@ textarea {
 
 @media screen and (max-width: 479px) {
   .person__foto {
-    width: 270px;
+    width: 310px;
     height: 260px;
   }
 }
@@ -2125,7 +2150,7 @@ textarea {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2148,6 +2173,12 @@ textarea {
 
 .button__type:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .button__type {
+    margin-bottom: 0px;
+  }
 }
 
 .button__list {

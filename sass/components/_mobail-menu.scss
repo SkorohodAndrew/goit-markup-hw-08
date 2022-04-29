@@ -48,7 +48,7 @@ background-color: $title-text-color;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    // z-index: 98;
+    z-index: 98;
 
     padding: 48px 40px 48px 40px;
     background-color: $primary-header-color;
@@ -98,21 +98,36 @@ font-weight: 500;
 letter-spacing: 0.02em;
 
 
-&__number{
-    font-size: 34px;
-    line-height: 1.17;
-    text-decoration: none;
-    color: $accent-color;
+// &__number{
+//     font-size: 34px;
+//     line-height: 1.17;
+//     text-decoration: none;
+//     color: $accent-color;
 
-}
+   
+// }
 
 &__email{
     font-size: 24px;
 line-height: 1.16;
 text-decoration: none;
 color:$secondary-text-color ;
-
 }
+
+.mobile-contact__number {
+    font-size: 34px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $accent-color;
+
+    @media screen and (max-width:479px){
+        font-size: 28px;
+        line-height: 1.17;
+        
+    }
+}
+
+
 }
 
 .mobile-contact__item{
@@ -126,12 +141,25 @@ color:$secondary-text-color ;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width:479px){
+        flex-wrap: wrap;
+        
+    }
 }
 .mobile-network__item{
-    padding-right: 20px;
+    margin-right: 20px;
+    
+    @media screen and (max-width:479px) {
+        margin-bottom: 10px;
+    
+    }
+    
 
 }
 .mobile-network__link{
 color: $accent-color;
 text-decoration: none;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg);
 }
