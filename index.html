@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
 <!-- Шапка сайта -->
 <header class="header">
     <div class="container header__container">
@@ -186,19 +185,19 @@
             <ul class="work">
                 <li class="work__item">
                     <div class="work__foto">
-                        <img class="" src="./images/work/text.jpg" alt="печатает текс" width="370" height="294" />
+                        <img class="" src="./images/WebStudio/work/text.jpg" alt="печатает текс" width="370" height="294" />
                         <p class="work__text">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__foto">
-                        <img src="./images/work/phone.jpg" alt="смотрит в телефон" width="370" height="294" />
+                        <img src="./images/WebStudio/work/phone.jpg" alt="смотрит в телефон" width="370" height="294" />
                         <p class="work__text">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__foto">
-                        <img src="./images/work/tablet.jpg" alt="смотрит в планшет" width="370" height="294" />
+                        <img src="./images/WebStudio/work/tablet.jpg" alt="смотрит в планшет" width="370" height="294" />
                         <p class="work__text">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -215,9 +214,31 @@
         <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="card-set list">
+    
                 <li class="card-set__item">
                     <article class="person">
-                        <img class="person__foto" src="./images/team/igor.jpg" alt="Игорь" width="460" height="450" />
+    
+    <picture>
+        <source srcset="
+        ./images/WebStudio/team/igor-l.jpg 1x,
+        ./images/WebStudio/team/igor-l@2x.jpg 2x
+        " media="(min-width: 1200px)" type="image/jpeg" />
+
+        <source srcset="
+        ./images/WebStudio/team/igor-m.jpg    1x,
+        ./images/WebStudio/team/igor-m@2x.jpg 2x
+        " media="(min-width: 768px)" type="image/jpeg" />
+                 
+        <source srcset="
+        ./images/WebStudio/team/igor-s@2x.jpg 2x"
+        media="(max-width: 767px)"
+        type="image/jpeg"/>
+
+        <img class="person__foto" src="./images/WebStudio/team/igor-s.jpg" alt="Игорь" width="460" height="450" />
+        
+    </picture>                          
+    
+    
                         <div class="person__meta">
                             <h3 class="person__title">Игорь Демьяненко</h3>
                             <p lang="en" class="person__text">Product Designer</p>
@@ -254,121 +275,177 @@
                         </div>
                     </article>
                 </li>
+    
                 <li class="card-set__item">
                     <article class="person">
-                    <img class="person__foto" src="./images/team/olga.jpg" alt="Ольгa" width="270" height="260" />
-                    <div class="person__meta">
-                        <h3 class="person__title">Ольга Репина</h3>
-                        <p lang="en" class="person__text">Frontend Developer</p>
-                        <ul class="network list">
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="network__icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+                        <picture>
+                            <source srcset="
+                                ./images/WebStudio/team/olga-l.jpg 1x,
+                                ./images/WebStudio/team/olga-l@2x.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/olga-m.jpg    1x,
+                                ./images/WebStudio/team/olga-m@2x.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/olga-s@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <img class="person__foto" src="./images/WebStudio/team/olga-s.jpg" alt="Ольга" width="460" height="450" />
+                        
+                        </picture>
+
+                        <div class="person__meta">
+                            <h3 class="person__title">Ольга Репина</h3>
+                            <p lang="en" class="person__text">Frontend Developer</p>
+                            <ul class="network list">
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="network__icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </article>
                 </li>
+
                 <li class="card-set__item">
                     <article class="person">
-                    <img class="person__foto" src="./images/team/nicholas.jpg" alt="Николай" width="270" height="260" />
-                    <div class="person__meta">
-                        <h3 class="person__title">Николай Тарасов</h3>
-                        <p lang="en" class="person__text">Marketing</p>
-                        <ul class="network list">
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="network__icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+                        <picture>
+                            <source srcset="
+                                ./images/WebStudio/team/nikolay-l.jpg 1x,
+                                ./images/WebStudio/team/nikolay-l@2x.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/nikolay-m.jpg    1x,
+                                ./images/WebStudio/team/nikolay-m@2x.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/nikolay-s@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <img class="person__foto" src="./images/WebStudio/team/nikolay-s.jpg" alt="Николай" width="460" height="450" />
+                        
+                        </picture>
+
+
+                        <div class="person__meta">
+                            <h3 class="person__title">Николай Тарасов</h3>
+                            <p lang="en" class="person__text">Marketing</p>
+                            <ul class="network list">
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="network__icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </article>
                 </li>
+                
                 <li class="card-set__item">
                     <article class="person">
-                    <img class="person__foto" src="./images/team/mykhailo.jpg" alt="Михаил" width="270" height="260" />
-                    <div class="person__meta">
-                        <h3 class="person__title">Михаил Ермаков</h3>
-                        <p lang="en" class="person__text">UI Designer</p>
-                        <ul class="network list">
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="network__icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="network__item">
-                                <a class="network__link" href="">
-                                    <svg class="media-icon" height="20" width="20">
-                                        <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <picture>
+                            <source srcset="
+                                ./images/WebStudio/team/mihail-l.jpg 1x,
+                                ./images/WebStudio/team/mihail-l@2x.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/mihail-m.jpg    1x,
+                                ./images/WebStudio/team/mihail-m@2x.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                ./images/WebStudio/team/mihail-s@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <img class="person__foto" src="./images/WebStudio/team/igor-s.jpg" alt="Михаил" width="460" height="450" />
+                        
+                        </picture>
+                        <div class="person__meta">
+                            <h3 class="person__title">Михаил Ермаков</h3>
+                            <p lang="en" class="person__text">UI Designer</p>
+                            <ul class="network list">
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="network__icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="network__item">
+                                    <a class="network__link" href="">
+                                        <svg class="media-icon" height="20" width="20">
+                                            <use href="./images/icon/symbol-defs.svg#Linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </article>
                 </li>
             </ul>

@@ -52,6 +52,7 @@
 
 
 
+        
         <!-- Мобильное окно -->
         <div class="mobile-header">
             <button class="mobile-header__button is-active" type="button" data-menu-button arial-expendet="false">
@@ -61,22 +62,22 @@
                 </svg>
             </button>
         </div>
-
-
+        
+        
         <div class="mobile-menu" data-menu>
-
+        
             <ul class="mobile-nav list">
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link mobile-nav__link--active" href="">Студия</a>
+                    <a class="mobile-nav__link " href="">Студия</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+                    <a class="mobile-nav__link mobile-nav__link--active" href="">Портфолио</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a class="mobile-nav__link" href="">Контакты</a>
+                    <a class="mobile-nav__link" href="./index.html">Контакты</a>
                 </li>
             </ul>
-
+        
             <ul class="mobile-contact list">
                 <li class="mobile-contact__item">
                     <a class="mobile-contact__number" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -85,7 +86,7 @@
                     <a class="mobile-contact__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
             </ul>
-
+        
             <ul class="mobile-network list">
                 <li class="mobile-network__item">
                     <a class="mobile-network__link" href="">instagram</a>
@@ -100,8 +101,10 @@
                     <a class="mobile-network__link" href="">Linkedin</a>
                 </li>
             </ul>
-
+        
         </div>
+
+
     </div>
 </header>
  
@@ -137,7 +140,17 @@
                 <li class="gallery__item">
                     <a class="card-project" href="">
                         <div class="card-project__list">
-                            <img class="card-project__foto" src="./images/labor/sq1.jpg" alt="Ноутбук" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/portfolio/labor/tehno-l.jpg 1px, ./images/portfolio/labor/tehno-l@2x.jpg 2px" media="(min-width: 1200px)" type="image/jpeg">
+                                    
+                                <source srcset="./images/portfolio/labor/tehno-m.jpg 1px, ./images/portfolio/labor/tehno-m@2x.jpg 2px"media="(min-width: 768px)" type="image/jpeg">
+
+                                <source srcset="./images/portfolio/labor/tehno-s@2x.jpg 2px" media="(max-width: 767px)" type="image/jpeg">
+                            
+                                <img class="person__foto" src="./images/portfolio/labor/tehno-s.jpg" alt="Михаил" width="460" height="450" />
+                                                            
+                            
+                            </picture>
                             <p class="card-project__bc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения компании или частном лице.</p>
                         </div>
@@ -338,6 +351,6 @@
     </div>
 </footer>
 
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

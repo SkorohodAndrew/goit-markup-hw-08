@@ -1,11 +1,14 @@
 @import "./utils/fonts";
 @import "./base/normalize";
 @import "./utils/variables";
+@import "./utils/mixins";
+
+
 
 @import "./components/modal";
 
 
-@import"./components/header-new";
+@import"./components/header";
 @import"./components/mobail-menu";
 @import "./components/hero";
 @import "./components/benefits";
