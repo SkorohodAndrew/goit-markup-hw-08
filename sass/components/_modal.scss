@@ -42,7 +42,7 @@
 
 
     @media screen and (max-width:479px) {
-    width: 300px;
+    width: 350px;
     height: 580px;
     
     }
@@ -89,11 +89,11 @@
     color: $primary-text-color;
     text-align: center;
 
-    @media screen and (min-width:768px) {
-        font-size: 14px;
-        line-height: 1.15;
+    // @media screen and (min-width:768px) {
+    //     font-size: 14px;
+    //     line-height: 1.15;
         
-    }
+    // }
 }
 
 
@@ -195,7 +195,12 @@ textarea {
         }
 
         @media screen and (min-width:768px) {
-        height: 80px;
+        height: 120px;
+        
+        }
+
+        @media screen and (min-width:768px) {
+            height: 120px;
         
         }
 }
@@ -244,8 +249,9 @@ textarea {
 
 
     @media screen and (max-width:479px) {
-        font-size: 10px;
-        line-height: 12px;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 14px;
     
     }
 
@@ -266,8 +272,8 @@ textarea {
     color: $accent-color;
 
     @media screen and (max-width:479px) {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 12px;
+        line-height: 14px;
     
     }
 
@@ -300,7 +306,7 @@ textarea {
     @media screen and (max-width:479px) {
         font-size: 14px;
         line-height: 1.87;
-        padding: 6px 35px 6px 35px;
+        padding: 10px 35px 10px 35px;
     }
 
 }

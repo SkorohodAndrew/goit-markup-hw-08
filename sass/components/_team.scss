@@ -43,6 +43,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    @media screen and(min-width:1200px) {
+        width: 270px;
+        height: 428px;
+    }
 }
 
 .person__foto{
@@ -84,6 +90,7 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
     text-align: center;
+
 }
 
 .person__text {
