@@ -87,7 +87,10 @@
             background-color: $accent-color;
         }
     }
-
+&:hover,
+&:focus {
+    color: $accent-color;
+}
 }
 
 
@@ -98,10 +101,7 @@
         margin-right: 0;
     }
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
+
 
 }
 

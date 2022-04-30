@@ -68,6 +68,11 @@
         }
     }
 
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
 }
 
 
