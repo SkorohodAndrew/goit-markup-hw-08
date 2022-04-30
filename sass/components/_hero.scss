@@ -12,29 +12,48 @@
     margin-right: auto;
 
     background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url("../images/WebStudio/hero/bg-hero_s.png");
     
 
+    // background-image: url(../images/WebStudio/hero/bg-hero_s.png);
 
-    background-image: url(../images/WebStudio/hero/bg-hero_s.png);
     @include mq (retina) {
-        background-image: url(../images/WebStudio/hero/bg-hero_s@2x.png);
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/WebStudio/hero/bg-hero_s@2x.png");
     }
 
     @include mq(tablet){
-        background-image: url(../images/WebStudio/hero/bg-hero_m.png);
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/WebStudio/hero/bg-hero_m.png");
 
         @include mq (retina) {
-            background-image: url(../images/WebStudio/hero/bg-hero_m@2x.png);
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/WebStudio/hero/bg-hero_m@2x.png");
+            
         }
     }  
     
     @include mq(desktop) {
-        background-image: url(../images/WebStudio/hero/bg-hero_l.png);
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/WebStudio/hero/bg-hero_l.png");
+        
     
         @include mq (retina) {
-            background-image: url(../images/WebStudio/hero/bg-hero_l@2x.png);
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/WebStudio/hero/bg-hero_l@2x.png");
+            
         }
     }
 
